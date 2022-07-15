@@ -26,7 +26,7 @@ export default function Contact() {
       <div>THis is Contact us</div>
       <div className="grid grid-flow-rows">
         {List_link.map((list) => (
-          <Link key={list.id} href={list.href}>
+          <Link key={list.id} href={list.href || list.href.toLowerCase()}>
             {list.name}
           </Link>
         ))}

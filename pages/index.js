@@ -10,11 +10,13 @@ export default function index() {
   const helloMoon = (e, txt) => {
     console.log(`Hello, ${txt}...`);
   };
+  // vercel hot get start whit lowercase path => /about
   const List_link = [
     { name: "Go to Index", href: "/" },
     { name: "Go to About", href: "/About" },
-    { name: "Go to Contact Us", href: "/Contact" },
+    { name: "Go to Contact Us", href: "/contact" },
   ];
+
   return (
     <>
       <Site_Head title={"Index Page..."}></Site_Head>
@@ -22,7 +24,7 @@ export default function index() {
         <h1>This is Index Page...</h1>
         <div className="grid grid-flow-rows">
           {List_link.map((list, index) => (
-            <Link key={index} href={list.href}>
+            <Link key={index} href={list.href || list.href.toLowerCase()}>
               {list.name}
             </Link>
           ))}

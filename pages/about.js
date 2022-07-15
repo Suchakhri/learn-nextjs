@@ -33,7 +33,7 @@ export default function About() {
         <h1>This is About Page...</h1>
         <div className="grid  grid-flow-rows">
           {List_link.map((list, index) => (
-            <Link key={index} href={list.href}>
+            <Link key={index} href={list.href || list.href.toLowerCase()}>
               {list.name}
             </Link>
           ))}
