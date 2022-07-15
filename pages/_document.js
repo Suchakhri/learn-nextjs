@@ -20,7 +20,6 @@ class MyDocument extends Document {
   }
   render() {
     console.log("Render on Server :");
-    console.log("Process Env : ", process.env);
     return (
       <Html lang="en">
         <Head>
