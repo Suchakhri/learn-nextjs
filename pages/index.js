@@ -13,7 +13,7 @@ export default function index() {
   // vercel hot get start whit lowercase path => /about
   const List_link = [
     { name: "Go to Index", href: "/" },
-    { name: "Go to About", href: "/About" },
+    { name: "Go to About", href: "/about" },
     { name: "Go to Contact Us", href: "/contact" },
   ];
 

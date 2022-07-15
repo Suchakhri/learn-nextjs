@@ -6,8 +6,8 @@ import Center from "@/layouts/Center";
 export default function About() {
   const List_link = [
     { name: "Go to Index", href: "/" },
-    { name: "Go to About", href: "/About" },
-    { name: "Go to Contact Us", href: "/Contact" },
+    { name: "Go to About", href: "/about" },
+    { name: "Go to Contact Us", href: "/contact" },
   ];
   const [count, setCount] = useState(0);
   // about 1 time
@@ -33,7 +33,7 @@ export default function About() {
         <h1>This is About Page...</h1>
         <div className="grid  grid-flow-rows">
           {List_link.map((list, index) => (
-            <Link key={index} href={list.href || list.href.toLowerCase()}>
+            <Link key={index} href={list.href}>
               {list.name}
             </Link>
           ))}

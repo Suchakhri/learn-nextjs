@@ -9,8 +9,8 @@ export default function Contact() {
   };
   const List_link = [
     { id: 0, name: "Go to Index", href: "/" },
-    { id: 1, name: "Go to About", href: "/About" },
-    { id: 2, name: "Go to Contact Us", href: "/Contact" },
+    { id: 1, name: "Go to About", href: "/about" },
+    { id: 2, name: "Go to Contact Us", href: "/contact" },
   ];
   const Tracker_btn = [
     { id: 0, count: 10 },
@@ -26,7 +26,7 @@ export default function Contact() {
       <div>THis is Contact us</div>
       <div className="grid grid-flow-rows">
         {List_link.map((list) => (
-          <Link key={list.id} href={list.href || list.href.toLowerCase()}>
+          <Link key={list.id} href={list.href}>
             {list.name}
           </Link>
         ))}
