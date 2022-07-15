@@ -3,14 +3,14 @@ import Site_Head from "@/layouts/Site_Head";
 import MyButton from "@/layouts/MyButton";
 import Link from "next/link";
 import Tracker from "@/layouts/Tracker";
-export default function contact() {
+export default function Contact() {
   const handleClicked = (event, msg) => {
     console.log("This is Props Function : ", msg, event);
   };
   const List_link = [
     { id: 0, name: "Go to Index", href: "/" },
-    { id: 1, name: "Go to About", href: "/about" },
-    { id: 2, name: "Go to Contact Us", href: "/contact" },
+    { id: 1, name: "Go to About", href: "/About" },
+    { id: 2, name: "Go to Contact Us", href: "/Contact" },
   ];
   const Tracker_btn = [
     { id: 0, count: 10 },

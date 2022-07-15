@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Link from "next/link";
-import Site_Head from "../components/layouts/Site_Head";
-import Center from "../components/layouts/Center";
+import Site_Head from "@/layouts/Site_Head";
+import Center from "@/layouts/Center";
 
-export default function about() {
+export default function About() {
   const List_link = [
     { name: "Go to Index", href: "/" },
-    { name: "Go to About", href: "/about" },
-    { name: "Go to Contact Us", href: "/contact" },
+    { name: "Go to About", href: "/About" },
+    { name: "Go to Contact Us", href: "/Contact" },
   ];
   const [count, setCount] = useState(0);
   // about 1 time

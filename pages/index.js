@@ -12,8 +12,8 @@ export default function index() {
   };
   const List_link = [
     { name: "Go to Index", href: "/" },
-    { name: "Go to About", href: "/about" },
-    { name: "Go to Contact Us", href: "/contact" },
+    { name: "Go to About", href: "/About" },
+    { name: "Go to Contact Us", href: "/Contact" },
   ];
   return (
     <>
