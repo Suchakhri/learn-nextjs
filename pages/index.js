@@ -2,11 +2,9 @@ import React from "react";
 import Link from "next/link";
 import Site_Head from "@/layouts/Site_Head";
 import Df_layout from "@/layouts/Df_layout";
-import Router from "next/router";
 import Type1 from "@/layouts/Props_Children/Type1";
 import Type2 from "@/layouts/Props_Children/Type2";
 import Type3 from "@/layouts/Props_Children/Type3";
-import Tracker from "@/layouts/Tracker";
 
 export default function index() {
   const helloMoon = (e, txt) => {
