@@ -11,20 +11,20 @@ export default function about() {
   ];
   const [count, setCount] = useState(0);
   // about 1 time
-  // useEffect(() => {
-  //   console.log(`UseEffect []`);
-  //   return () => {
-  //     console.log(`UseEffect [] Unmounted`);
-  //   };
-  // }, []);
-  // // Every count change
-  // useEffect(() => {
-  //   document.title = `Count is ${count}`;
-  //   console.log(`${count} UseEffect [count]`);
-  //   return () => {
-  //     console.log(`${count} UseEffect [count] Unmounted`);
-  //   };
-  // }, [count]);
+  useEffect(() => {
+    console.log(`UseEffect []`);
+    return () => {
+      console.log(`UseEffect [] Unmounted`);
+    };
+  }, []);
+  // Every count change
+  useEffect(() => {
+    document.title = `Count is ${count}`;
+    console.log(`${count} UseEffect [count]`);
+    return () => {
+      console.log(`${count} UseEffect [count] Unmounted`);
+    };
+  }, [count]);
 
   return (
     <>
