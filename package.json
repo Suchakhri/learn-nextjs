@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "NEXT_PUBLIC_GOOGLE_ANALYTICS=G-TZVPLHC3BT next start",
+    "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
