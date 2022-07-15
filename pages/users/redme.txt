@@ -1,0 +1,9 @@
+http://localhost:3000/users/[userid]/books/[bookid]
+
+
+#[userid] = String variable || Path
+#[bookid] = String variable || Path
+
+
+** Example **
+http://localhost:3000/users/110/books/534
