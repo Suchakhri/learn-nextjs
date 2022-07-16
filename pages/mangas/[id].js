@@ -15,10 +15,10 @@ export default function MangaId({ manga }) {
         {/* Set Robots content(index,noindex,...) */}
         <meta name="robots" content="noindex,nofollow" />
         {/* set Publisher */}
-        <link
+        {/* <link
           href={`https://learn-nextjs-ten-murex.vercel.app/mangas/${manga.mal_id}`}
           rel="publisher"
-        />
+        /> */}
         {/* Set Canonical */}
         <link
           rel="canonical"
