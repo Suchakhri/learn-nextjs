@@ -6,6 +6,13 @@ export default function MangaId({ manga }) {
   return (
     <>
       <Site_Head title={manga.title}>
+        {/* default website */}
+        <meta charset="UTF-8" />
+        <meta name="description" content={manga.synopsis} />
+        <meta name="keywords" content={manga.title} />
+        <meta name="author" content={manga.title} />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        {/* Facebook Card */}
         <meta
           property="og:url"
           content={`https://learn-nextjs-ten-murex.vercel.app/mangas/${manga.mal_id}`}
@@ -14,6 +21,11 @@ export default function MangaId({ manga }) {
         <meta property="og:title" content={manga.title} />
         <meta property="og:description" content={manga.synopsis} />
         <meta property="og:image" content={manga.image_url} />
+        {/* Twitter Card */}
+        <meta name="twitter:title" content={manga.title} />
+        <meta name="twitter:description" content={manga.synopsis} />
+        <meta name="twitter:image" content={manga.image_url} />
+        <meta name="twitter:card" content="summary_large_image"></meta>
       </Site_Head>
       <div className="grid  grid-flow-row gap-4 justify-center items-center">
         <div key={manga.mal_id} className="gap-4">
