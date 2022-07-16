@@ -14,6 +14,7 @@ export default function MangaCard({ manga }) {
         height="140"
         image={manga.image_url}
         alt={manga.title}
+        title={manga.title}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
