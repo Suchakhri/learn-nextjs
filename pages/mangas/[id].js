@@ -6,7 +6,14 @@ export default function MangaId({ manga }) {
   return (
     <>
       <Site_Head title={manga.title}>
+        <meta
+          property="og:url"
+          content={`https://learn-nextjs-ten-murex.vercel.app/mangas/${manga.mal_id}`}
+        />
+        <meta property="og:type" content="article" />
         <meta property="og:title" content={manga.title} />
+        <meta property="og:description" content={manga.synopsis} />
+        <meta property="og:image" content={manga.image_url} />
       </Site_Head>
       <div className="grid  grid-flow-row gap-4 justify-center items-center">
         <div key={manga.mal_id} className="gap-4">
